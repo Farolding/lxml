@@ -235,6 +235,7 @@ ffi.cdef("""
 					 xmlParserInputBufferPtr input,
 					 xmlCharEncoding enc);""")
 libxml = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxml/parser.h"
     #include "libxml/parserInternals.h"
 """,

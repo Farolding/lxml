@@ -181,6 +181,7 @@ ffi.cdef("""
 """)
 
 libxslt = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxslt/xsltutils.h"
     #include "libxslt/security.h"
     #include "libxslt/transform.h"

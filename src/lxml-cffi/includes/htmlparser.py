@@ -63,6 +63,7 @@ ffi.cdef("""
 """)
 
 libxml = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxml/HTMLparser.h"
     #include "libxml/HTMLtree.h"
 """,

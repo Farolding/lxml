@@ -147,6 +147,7 @@ ffi.cdef("""
 """)
 
 libxml = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxml/xpath.h"
     #include "libxml/xpathInternals.h"
 """,

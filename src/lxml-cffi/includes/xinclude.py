@@ -11,6 +11,7 @@ ffi.cdef("""
 					 void *data);
 """)
 libxml = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxml/xinclude.h"
 """,
 include_dirs=['/usr/include/libxml2'],

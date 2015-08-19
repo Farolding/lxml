@@ -489,6 +489,7 @@ ffi.cdef("""
 """)
 
 libxml = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxml/chvalid.h"
     #include "libxml/tree.h"
     #include "libxml/uri.h"

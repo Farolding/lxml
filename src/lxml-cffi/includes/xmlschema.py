@@ -52,6 +52,7 @@ ffi.cdef("""
 """)
 
 libxml = ffi.verify("""
+    #include "libxml/relaxng.h"
     #include "libxml/xmlschemas.h"
 """,
 include_dirs=['/usr/include/libxml2'],

@@ -858,8 +858,8 @@ ffi.cdef("""
 """)
 
 libxml = ffi.verify("""
-    #include "libxml/xmlerror.h"
     #include "libxml/relaxng.h"
+    #include "libxml/xmlerror.h"
 
     xmlStructuredErrorFunc get_xmlStructuredError() {
         return xmlStructuredError;
